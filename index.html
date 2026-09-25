@@ -24,9 +24,11 @@
       width: 100%;
       max-width: 400px;
       text-align: center;
+      border: 1px solid #2a2a2a;
     }
     h2 { margin-top: 0; font-size: 1.2rem; color: #b3b3b3; }
-    .track-title { font-size: 1.4rem; font-weight: bold; margin: 15px 0; color: #1db954; }
+    /* Gold für den Songtitel */
+    .track-title { font-size: 1.4rem; font-weight: bold; margin: 15px 0; color: #d4af37; }
     audio { width: 100%; margin: 15px 0; }
     .playlist {
       list-style: none;
@@ -44,13 +46,14 @@
       font-size: 0.95rem;
     }
     .playlist li:hover { background-color: #282828; }
-    .playlist li.active { color: #1db954; font-weight: bold; background-color: #282828; }
+    /* Gold für den aktiven Song in der Liste */
+    .playlist li.active { color: #d4af37; font-weight: bold; background-color: #282828; }
   </style>
 </head>
 <body>
 
 <div class="player-card">
-  <h2>PB Radio FM</h2>
+  <h2>Peembeck Radio FM</h2>
   <div class="track-title" id="currentTrackTitle">Lade Titel...</div>
   
   <audio id="audioPlayer" controls autoplay></audio>
@@ -60,8 +63,8 @@
 
 <script>
   // Hier tragen Sie die Dateinamen Ihrer MP3s aus dem "music"-Ordner ein:
- const songs = [
-    { title: "Audio 1", file: "PBTV-Track.mp3" }
+  const songs = [
+    { title: "Peembeck Tracklist1", file: "PBTV-Track.mp3" }
   ];
 
   let currentIndex = 0;
